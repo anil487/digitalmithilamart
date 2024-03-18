@@ -1,0 +1,64 @@
+
+#card {
+    display:flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    height: 300px;
+    
+    
+  }
+  
+  
+   #card .items img {
+    width: 150%;
+    height: 50%;
+    margin-bottom: 10px; 
+   }
+
+  #card .items{
+    border: 1px solid #ccc;
+    padding:8px;
+    width:200px;
+    text-align: center;
+    background:antiquewhite;
+  }
+
+  
+  /* place order css 0r Button */
+   .Button{
+    height: 30px;
+    padding: 8px 12px;
+    font-size:10px;
+    
+  } 
+  #order-btn{
+    color: white;
+    background-color:blue;
+  }
+
+ #order-btn:hover{
+  background-color: darkblue;
+ }
+   
+
+/* for searchBar */
+#search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 300px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+#search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px;
+}
+
+.search-icon {
+  margin-right: 5px;
+}

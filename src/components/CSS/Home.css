@@ -1,0 +1,22 @@
+.container {
+    margin-top: 50px;
+  }
+  
+  .carousel {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .carousel img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .legend {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+  

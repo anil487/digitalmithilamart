@@ -1,0 +1,92 @@
+
+.headings{
+    font-size: x-large;
+    color: crimson;
+    font-family: sans-serif;
+    font-style:normal;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+table {
+    border: 1px solid black;
+    padding:10px;
+    border-collapse: collapse;
+    
+    
+     
+    }
+    
+    th {
+      background-color: #f2f2f2;
+      color:blueviolet;
+      font-weight: bold;
+      text-align:left;
+      padding: 8px;
+    }
+    
+    
+    /* Style for table cells */
+    td {
+      padding: 8px;
+      align-items:center;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    /* Hover effect for rows */
+    tr:hover {
+      background-color:blanchedalmond;
+    }
+    
+    /* Button styles */
+
+    .delete{
+      padding: 5px 10px;
+      margin-right: 5px;
+      background-color:crimson;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    
+    
+    .Button:hover {
+      background-color:orange;
+    }
+  
+  
+  
+    /* style for DisplayUd */
+    .display-tbl{
+      border: "1px" solid black;
+      padding: "8px";
+      width: 50%;
+      border-collapse: collapse;
+  
+    }
+  
+  
+  .btn-delete{
+    padding:5px 10px;
+    margin-left:"5px";
+    color:#ddd;
+    background-color:red;
+  }
+  
+  button.btn-delete:hover{
+    background-color:black;
+  }
+  
+  
+  thead.tbl-head{
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  td.btn-sp{
+    padding-left:"5px";
+  }
+  
+    

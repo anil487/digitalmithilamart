@@ -1,0 +1,104 @@
+/* cart css */
+
+.place-ordered-img img {
+    width: 80px; /* Set the width as needed */
+    height: 80px; /* Set the height as needed */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    object-fit: cover; /* Ensure the image covers the entire space */
+    object-position: center; /* Center the image within the container */
+    border: 2px solid #ccc; /* Optional: Add a border for decoration */
+  }
+  
+  /* Optional hover effect for the image */
+  .place-ordered-img img:hover {
+    transform: scale(1.1); /* Increase size on hover (adjust as needed) */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+
+
+  /* product add and remove button */
+  .Add-btn{
+    background:blue;
+  }
+
+  .Remove-btn{
+    background: blue;
+  }
+  .history-btn{
+    background: green;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+
+  .order-history{
+    display:flexbox;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .total-sum{
+    font-size: large;
+    font-weight: bold;
+  }
+  /* pay now button */
+  .pay-now{
+    background: red;
+  }
+  .pay-now:hover{
+    background: yellowgreen;
+    
+  }
+
+  .U-details{
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  #Cart-display{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+  }
+  /* Logout button styles */
+.logout-btn {
+  background-color: deepskyblue;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.top-right {
+  display:flex;
+  justify-content:flex-end;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+@media (max-width: 768px) {
+  .Ordered-products {
+    margin: 0;
+  }
+
+  .headings {
+    font-size: 20px;
+  }
+
+  .U-details {
+    margin: 0;
+  }
+
+  .total-sum {
+    font-size: 18px;
+  }
+
+  .logout-btn {
+    font-size: 14px;
+  }
+}
+
+

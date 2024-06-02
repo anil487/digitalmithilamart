@@ -1,10 +1,12 @@
-
 import Home from "./Pages/Home";
-
 function App() {
+  
   return (
     <>
-    <Home />
+      <Home />
+
+     
+
       {/* <Carousel /> */}
       {/* <MyRoutes></MyRoutes> */}
     </>

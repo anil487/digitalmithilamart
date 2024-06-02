@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/CSS/AboutUs.css"
+import "../components/CSS/AboutUs.css";
 const AboutUs = () => {
   return (
     <div className="about-us-container">
@@ -25,10 +25,8 @@ const AboutUs = () => {
             <strong>Phone:</strong> +977 9823524880
           </p>
           <p>
-            <strong>Email:</strong>{" "}
-            <a href="mailto:anilmahatoanil95659@gmail.com">
-              anilmahatoanil95659@gmail.com
-            </a>
+            <strong>Email:</strong>
+             Digitalmithilamart@gmail.com
           </p>
         </div>
         <p className="visit-request">

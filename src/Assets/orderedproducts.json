@@ -1,0 +1,20 @@
+{
+  "orderedproducts": [
+    {
+      "id": "1",
+      "name": "purse",
+      "price": 5000,
+      "description": "red purse ",
+      "picture": "https://burst.shopifycdn.com/photos/bright-red-purse-with-gold.jpg?width=925&amp;format=pjpg&amp;exif=0&amp;iptc=0",
+      "quantity": 1
+    },
+    {
+      "id": "10",
+      "name": "beared-oil",
+      "price": 600,
+      "description": "natural  oil",
+      "picture": "https://burst.shopifycdn.com/photos/beard-oil-product-photo.jpg?width=925&amp;format=pjpg&amp;exif=0&amp;iptc=0",
+      "quantity": 1
+    }
+  ]
+}

@@ -1,45 +1,58 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import Footer from "../components/layout/Footer";
-import img1 from '../Assets/1.jpg';
-import img2 from '../Assets/2.jpg';
-import img3 from '../Assets/3.jpg';
-import "../components/CSS/Home.css"
+import { Swiper, SwiperSlide } from "swiper/react";
+import {  A11y, Autoplay } from "swiper/modules";
+import "swiper/css/bundle";
+import "swiper/css";
+import "swiper/css/navigation";
 
- export const Home = () => {
+import Footer from "../components/layout/Footer";
+import cimg1 from "../Assets/cimg1.png";
+import cimg2 from "../Assets/cimg2.png";
+import cimg3 from "../Assets/cimg3.png";
+import cimg4 from "../Assets/cimg4.png";
+
+const Home = () => {
   return (
     <>
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-md-5">
-            <Carousel
-              infiniteLoop={true}
-              autoPlay={true}
-              interval={3000}
-              showArrows={true}
-              className="carousel" 
-            >
-              <div>
-                <img src={img1} alt="First slide" />
-                <p className="legend">First</p>
-              </div>
-              <div>
-                <img src={img2} alt="Second slide" />
-                <p className="legend">Second</p>
-              </div>
-              <div>
-                <img src={img3} alt="Third slide" />
-                <p className="legend">Third</p>
-              </div>
-            </Carousel>
-          </div>
-        </div>
-      </div>
-      <Footer />
+      <Swiper
+        modules={[ A11y,Autoplay]}
+        spaceBetween={50}
+        slidesPerView={1}
+        autoplay={{delay:3000}}
+      >
+        <SwiperSlide>
+          <img
+            src={cimg1}
+            alt="slide1"
+            style={{ width: "100%", height: "100vh" }}
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={cimg2}
+            alt="slide2"
+            style={{ width: "100%", height: "100vh" }}
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={cimg3}
+            alt="slide3"
+            style={{ width: "100%", height: "100vh" }}
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={cimg4}
+            alt="slide4"
+            style={{ width: "100%", height: "100vh" }}
+          ></img>
+        </SwiperSlide>
+      </Swiper>
+
+      <Footer></Footer>
     </>
   );
 };
+
 export default Home;
-
-

@@ -1,64 +1,116 @@
-
+/* Default card styles */
 #card {
-    display:flex;
-    flex-wrap:wrap;
-    gap: 20px;
-    height: 300px;
-    
-    
-  }
-  
-  
-   #card .items img {
-    width: 150%;
-    height: 50%;
-    margin-bottom: 10px; 
-   }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
 
-  #card .items{
-    border: 1px solid #ccc;
-    padding:8px;
-    width:200px;
-    text-align: center;
-    background:antiquewhite;
-  }
+#card .items {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  width:250px;
+  display: flex;
+  flex-direction: column; /* Make it a column layout */
+  align-items: center; /* Center items horizontally */
+}
 
-  
-  /* place order css 0r Button */
-   .Button{
-    height: 30px;
-    padding: 8px 12px;
-    font-size:10px;
-    
-  } 
-  #order-btn{
-    color: white;
-    background-color:blue;
-  }
+#card .items:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
 
- #order-btn:hover{
-  background-color: darkblue;
- }
-   
+#card .items img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #f0f0f0;
+}
 
-/* for searchBar */
+#card .items .content {
+  padding: 16px;
+  flex-grow: 1; /* Grow to fill remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#card .items h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#card .items p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666666;
+  margin-bottom: 12px;
+}
+
+/* Style for the button with id="order-btn" */
+#order-btn {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#order-btn:hover {
+  background-color: dodgerblue;
+}
+
+/* Search bar styles */
 #search-bar {
   display: flex;
   align-items: center;
   max-width: 300px;
-  margin: 20px auto;
+  margin: 60px auto;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 5px;
+  padding: 8px;
 }
 
 #search-bar input {
   border: none;
   outline: none;
   flex: 1;
-  padding: 5px;
+  padding: 8px;
 }
 
 .search-icon {
-  margin-right: 5px;
+  margin-right: 8px;
+}
+
+/* category selection */
+.category-select {
+  margin: 20px 0;
+}
+
+.category-select label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.category-select select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+  #card .items {
+    width: calc(50% - 20px); /* Two cards per row with some gap */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #card .items {
+    width: calc(100% - 20px); /* Full width with some gap */
+  }
 }

@@ -1,22 +1,48 @@
-.container {
-    margin-top: 50px;
-  }
-  
+/* Home.css */
+
+.carousel {
+  width: 100%;
+  max-width: 600px; /* Set your desired max-width */
+  margin: 40px auto;
+  padding: 0; /* Add padding zero */
+}
+
+.carousel .slide {
+  background: lightblue;
+}
+
+.carousel .control-arrow {
+  display: none;
+}
+.carousel .img{
+  height:600px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
   .carousel {
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 800px; /* Adjust max-width for medium screens */
+    padding: 0; /* Add padding zero */
   }
-  
-  .carousel img {
-    max-width: 100%;
-    height: auto;
+}
+
+@media (min-width: 992px) {
+  .carousel {
+    max-width: 1024px; /* Adjust max-width for large screens */
+    padding: 0; /* Add padding zero */
   }
-  
-  .legend {
-    text-align: center;
-    font-size: 16px;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+}
+
+@media (min-width: 1200px) {
+  .carousel {
+    max-width: 1200px; /* Adjust max-width for extra large screens */
+    padding: 0; /* Add padding zero */
   }
-  
+}
+
+@media (max-width: 767.98px) {
+  .carousel {
+    max-width: 100%; /* Full width for smaller screens */
+    padding: 0; /* Add padding zero */
+  }
+}

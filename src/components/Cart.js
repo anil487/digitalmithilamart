@@ -176,11 +176,11 @@ function Cart(props) {
             </div>
           )}
           <br></br>
-          <h1
+          <h2
             style={{ fontWeight: "bold", textAlign: "center", margin: "8px" }}
           >
             Available Orders
-          </h1>
+          </h2>
           <table>
             <thead>
               <tr>

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Card } from "../components/Card";
 import Dropdownlist from "./minicomponents/Dropdownlist";
 import { useNavigate } from "react-router-dom";
+import { text } from "@fortawesome/fontawesome-svg-core";
 
 export const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -56,7 +57,7 @@ export const Products = () => {
     <>
       <Dropdownlist onChange={handleCategoryChange} />
       <div>
-        <h4>Selected Category: {selectedCategory}</h4>
+      <p style={{ fontWeight: 'bold' }}>Selected Category: {selectedCategory}</p>
       </div>
       <Card
         orderedProductsEndpoint={orderedProductsEndpoint}

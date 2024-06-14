@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="container mt-4">
+    <div className="container mt-4" id="contact-us">
       <h2 className="text-center mb-4 font-bold">Contact Us</h2>
       <div className="flex flex-wrap justify-center">
         {/* Left side for contact form */}
@@ -69,10 +69,10 @@ const Contact = () => {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28468.11514741362!2d86.13361682139121!3d26.887165383168433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ec1b0ab753a33f%3A0xda5ee1f3ca1b7040!2sBandipur%2C%20Badharamal%2056500!5e0!3m2!1sen!2snp!4v1710699145279!5m2!1sen!2snp"
               width="600"
               height="450"
-              style={{border: "0" }}
-              allowfullscreen=""
+              style={{ border: "0" }}
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
               title="location-map"
             ></iframe>
           </div>

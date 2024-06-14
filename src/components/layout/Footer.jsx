@@ -8,7 +8,7 @@ import connectips from "../../Assets/connectips.jpg";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-fuchsia-600 ">
+    <footer className="footer bg-fuchsia-600 fixed-bottom-0">
       <div className="footer-container">
         <div className="footer-section">
           <h5 className="we-accept">

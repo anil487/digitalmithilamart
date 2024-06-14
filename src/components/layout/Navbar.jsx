@@ -4,7 +4,7 @@ import "../CSS/Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="bg-fuchsia-600 text-white py-0 fixed top-0 w-full z-10 "> 
+    <nav className="bg-fuchsia-600 text-white py-0 fixed top-0 w-full z-10">
       <div className="max-w-6xl m-auto px-4 sm:px-1 lg:px-5">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -14,27 +14,27 @@ const Navbar = () => {
           </div>
           <div className="hidden sm:flex sm:items-center sm:ml-6">
             <div className="flex space-x-4 px-3">
-              <Link to="/home" className="font-bold text-white">
+              <Link to="/home" className="font-bold text-white hover:text-blue-500">
                 Home
               </Link>
-              <Link to="/products" className="font-bold text-white">
+              <Link to="/products" className="font-bold text-white hover:text-blue-500">
                 Products
               </Link>
-              <Link to="/contact" className="font-bold text-white">
+              <Link to="/contact" className="font-bold text-white hover:text-blue-500">
                 Contact
               </Link>
-              <Link to="/about" className="font-bold text-white">
+              <Link to="/about" className="font-bold text-white hover:text-blue-500">
                 About Us
               </Link>
             </div>
             <div className="ml-6 flex items-center ms-7">
-              <Link to="/signin" className="font-bold text-white">
+              <Link to="/signin" className="font-bold text-white hover:text-blue-500">
                 <i className="fas fa-user"></i> Sign in
               </Link>
-              <Link to="/signup" className="ml-4 font-bold text-white">
+              <Link to="/signup" className="ml-4 font-bold text-white hover:text-blue-500">
                 <i className="fas fa-user-plus"></i> Sign Up
               </Link>
-              <Link to="/cart" className="ml-4 font-bold text-white">
+              <Link to="/cart" className="ml-4 font-bold text-white hover:text-blue-500">
                 <i className="bi bi-cart4"></i> Cart
               </Link>
             </div>

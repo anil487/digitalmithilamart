@@ -1,7 +1,8 @@
-{
-  "products": [
+
+  {"products": [
     {
       "id": 1,
+      "category":"accessories",
       "name": "purse",
       "price": 5000,
       "description": "red purse ",
@@ -9,6 +10,7 @@
     },
     {
       "id": 2,
+      "category":"accessories",
       "name": "Earings",
       "price": 300,
       "description": "earings",
@@ -16,6 +18,7 @@
     },
     {
       "id": 3,
+      "category": "clothing",
       "name": "B-Tshirt",
       "price": 600,
       "description": "Made with cotton",
@@ -23,6 +26,7 @@
     },
     {
       "id": 4,
+      "category": "electronics",
       "name": "watch",
       "price": 900,
       "description": "Leather watch",
@@ -30,6 +34,7 @@
     },
     {
       "id": 5,
+      "category": "clothing",
       "name": "stripped-dress",
       "price": 2500,
       "description": "Girls-stripped-dress",
@@ -37,6 +42,7 @@
     },
     {
       "id": 6,
+      "category":"accessories",
       "name": "bracelets",
       "price": 1000,
       "description": "stainless steel",
@@ -44,6 +50,7 @@
     },
     {
       "id": 7,
+      "category": "electronics",
       "name": "Headphones",
       "price": 900,
       "description": "wireless-headphones",
@@ -51,6 +58,7 @@
     },
     {
       "id": 8,
+      "category": "footwear",
       "name": "sneakers",
       "price": 1200,
       "description": "black-sneakers ",
@@ -58,6 +66,7 @@
     },
     {
       "id": 9,
+      "category":"accessories",
       "name": "fitness watch",
       "price": 90000,
       "description": "fitness-tackers-watch",
@@ -65,6 +74,7 @@
     },
     {
       "id": 10,
+      "category":"personal Care",
       "name": "beared-oil",
       "price": 600,
       "description": "natural  oil",

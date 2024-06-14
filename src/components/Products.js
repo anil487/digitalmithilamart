@@ -1,8 +1,11 @@
-import React from "react";
+
+import React, { useState } from "react";
 import { Card } from "../components/Card";
+import Dropdownlist from "./minicomponents/Dropdownlist";
 import { useNavigate } from "react-router-dom";
 
 export const Products = () => {
+  const [selectedCategory, setSelectedCategory] = useState("");
   const orderedProductsEndpoint = "http://localhost:5000/orderedproducts";
   const navigate = useNavigate();
 
@@ -19,13 +22,13 @@ export const Products = () => {
   const postData = async (item) => {
     const orderDetails = {
       id: item.id,
+      category: item.category,
       name: item.name,
       price: item.price,
       description: item.description,
       picture: item.picture,
       quantity: 1,
     };
-    const orderedProductsEndpoint = "http://localhost:5000/orderedproducts";
 
     try {
       const postData = await fetch(orderedProductsEndpoint, {
@@ -45,14 +48,24 @@ export const Products = () => {
     }
   };
 
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+  };
+
   return (
     <>
+      <Dropdownlist onChange={handleCategoryChange} />
+      <div>
+        <h4>Selected Category: {selectedCategory}</h4>
+      </div>
       <Card
         orderedProductsEndpoint={orderedProductsEndpoint}
         handleAddToCart={handleAddToCart}
+        selectedCategory={selectedCategory}
       />
     </>
   );
 };
 
 export default Products;
+

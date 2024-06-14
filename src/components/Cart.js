@@ -185,6 +185,7 @@ function Cart(props) {
             <thead>
               <tr>
                 <th>id</th>
+                <th>category</th>
                 <th>Name</th>
                 <th>Price</th>
                 <th>Description</th>
@@ -198,6 +199,7 @@ function Cart(props) {
                 orderedItems.map((selectedProduct) => (
                   <tr key={selectedProduct.id}>
                     <td>{selectedProduct.id}</td>
+                    <td>{selectedProduct.category}</td>
                     <td>{selectedProduct.name}</td>
                     <td>{selectedProduct.price}</td>
                     <td>{selectedProduct.description}</td>

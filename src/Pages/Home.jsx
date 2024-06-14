@@ -6,10 +6,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import Footer from "../components/layout/Footer";
-import cimg1 from "../Assets/cimg1.png";
-import cimg2 from "../Assets/cimg2.png";
-import cimg3 from "../Assets/cimg3.png";
-import cimg4 from "../Assets/cimg4.png";
+import cimg1 from "../Assets/bg0.png";
+import cimg2 from "../Assets/bg1.png";
+import cimg3 from "../Assets/bg2.png";
+import cimg4 from "../Assets/bg3.png";
 
 const Home = () => {
   return (
@@ -50,7 +50,7 @@ const Home = () => {
         </SwiperSlide>
       </Swiper>
 
-      <Footer></Footer>
+      <Footer />
     </>
   );
 };

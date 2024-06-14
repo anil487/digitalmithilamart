@@ -30,7 +30,7 @@ table {
     
     /* Style for table cells */
     td {
-      padding: 8px;
+      padding: 6px;
       align-items:center;
       border-bottom: 1px solid #ddd;
     }

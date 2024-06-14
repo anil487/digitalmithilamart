@@ -87,22 +87,14 @@
   margin-right: 8px;
 }
 
-/* category selection */
-.category-select {
-  margin: 20px 0;
-}
 
-.category-select label {
+/* dropdownlist */
+.Drop-down-btn{
+  margin-top: 4rem;
+  margin-left: 3rem;
   font-weight: bold;
-  margin-right: 10px;
+
 }
-
-.category-select select {
-  padding: 5px;
-  font-size: 16px;
-}
-
-
 /* Media Query for Responsive Design */
 @media screen and (max-width: 768px) {
   #card .items {

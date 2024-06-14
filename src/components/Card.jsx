@@ -3,7 +3,11 @@ import Searchbar from "../components/Searchbar";
 import "../components/CSS/card.css";
 import Footer from "../components/layout/Footer";
 
-export const Card = ({ orderedProductsEndpoint, handleAddToCart }) => {
+export const Card = ({
+  orderedProductsEndpoint,
+  handleAddToCart,
+  selectedCategory,
+}) => {
   const [cartitems, setCartItems] = useState([]);
   const [filteredItems, setFilteredItems] = useState([]);
 
@@ -17,10 +21,20 @@ export const Card = ({ orderedProductsEndpoint, handleAddToCart }) => {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
+  useEffect(() => {
+    if (selectedCategory) {
+      setFilteredItems(
+        cartitems.filter((item) => item.category === selectedCategory)
+      );
+    } else {
+      setFilteredItems(cartitems);
+    }
+  }, [selectedCategory, cartitems]);
+
   return (
     <>
-    <div>
-      <Searchbar cartitems={cartitems} setFilteredItems={setFilteredItems} />
+      <div>
+        <Searchbar cartitems={cartitems} setFilteredItems={setFilteredItems} />
       </div>
 
       <div id="card">
@@ -29,6 +43,7 @@ export const Card = ({ orderedProductsEndpoint, handleAddToCart }) => {
             <img src={item.picture} alt={item.name} />
             <div className="text">
               <p>id: {item.id}</p>
+              <p>category: {item.category}</p>
               <p>Name:{item.name}</p>
               <p>{item.description}</p>
               <p>NPR:{item.price}</p>
